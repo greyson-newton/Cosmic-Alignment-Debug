@@ -1,0 +1,250 @@
+diff -r /afs/cern.ch/work/g/grnewton/public/CMSSW_10_5_0/src/Alignment/CommonAlignmentMonitor/plugins/AlignmentMonitorSegmentDifferences.cc /cvmfs/cms.cern.ch/slc7_amd64_gcc820/cms/cmssw/CMSSW_10_5_0/src/Alignment/CommonAlignmentMonitor/plugins/AlignmentMonitorSegmentDifferences.cc
+130,131c130,131
+<   char name[222], pos[222], neg[222];
+<   char buffer[230];
+---
+>   char name[225], pos[228], neg[228];
+> 
+140c140
+<       snprintf(wheel_sector, sizeof(buffer), "%s_%02d", wheel_label[wheel+2], sector );
+---
+>       sprintf(wheel_sector,"%s_%02d", wheel_label[wheel+2], sector );
+146,147c146,147
+<       snprintf(pos,sizeof(buffer),"pos%s",name);
+<       snprintf(neg,sizeof(buffer),"neg%s",name);
+---
+>       sprintf(pos,"pos%s", name);
+>       sprintf(neg,"neg%s", name);
+153,154c153,154
+<       snprintf(pos,sizeof(buffer),"pos%s",name);
+<       snprintf(neg,sizeof(buffer),"neg%s",name);
+---
+>       sprintf(pos,"pos%s", name);
+>       sprintf(neg,"neg%s", name);
+160,161c160,161
+<       snprintf(pos,sizeof(buffer),"pos%s",name);
+<       snprintf(neg,sizeof(buffer),"neg%s",name);
+---
+>       sprintf(pos,"pos%s", name);
+>       sprintf(neg,"neg%s", name);
+167,168c167,168
+<       snprintf(pos,sizeof(buffer),"pos%s",name);
+<       snprintf(neg,sizeof(buffer),"neg%s",name);
+---
+>       sprintf(pos,"pos%s", name);
+>       sprintf(neg,"neg%s", name);
+174,175c174,175
+<       snprintf(pos,sizeof(buffer),"pos%s",name);
+<       snprintf(neg,sizeof(buffer),"neg%s",name);
+---
+>       sprintf(pos,"pos%s", name);
+>       sprintf(neg,"neg%s", name);
+181,182c181,182
+<       snprintf(pos,sizeof(buffer),"pos%s",name);
+<       snprintf(neg,sizeof(buffer),"neg%s",name);
+---
+>       sprintf(pos,"pos%s", name);
+>       sprintf(neg,"neg%s", name);
+188,189c188,189
+<       snprintf(pos,sizeof(buffer),"pos%s",name);
+<       snprintf(neg,sizeof(buffer),"neg%s",name);
+---
+>       sprintf(pos,"pos%s", name);
+>       sprintf(neg,"neg%s", name);
+195,196c195,196
+<       snprintf(pos,sizeof(buffer),"pos%s",name);
+<       snprintf(neg,sizeof(buffer),"neg%s",name);
+---
+>       sprintf(pos,"pos%s", name);
+>       sprintf(neg,"neg%s", name);
+202,203c202,203
+<       snprintf(pos,sizeof(buffer),"pos%s",name);
+<       snprintf(neg,sizeof(buffer),"neg%s",name);
+---
+>       sprintf(pos,"pos%s", name);
+>       sprintf(neg,"neg%s", name);
+209,210c209,210
+<       snprintf(pos,sizeof(buffer),"pos%s",name);
+<       snprintf(neg,sizeof(buffer),"neg%s",name);
+---
+>       sprintf(pos,"pos%s", name);
+>       sprintf(neg,"neg%s", name);
+232,233c232,233
+<       snprintf(pos,sizeof(buffer),"pos%s",name);
+<       snprintf(neg,sizeof(buffer),"neg%s",name);
+---
+>       sprintf(pos,"pos%s", name);
+>       sprintf(neg,"neg%s", name);
+239,240c239,240
+<       snprintf(pos,sizeof(buffer),"pos%s",name);
+<       snprintf(neg,sizeof(buffer),"neg%s",name);
+---
+>       sprintf(pos,"pos%s", name);
+>       sprintf(neg,"neg%s", name);
+246,247c246,247
+<       snprintf(pos,sizeof(buffer),"pos%s",name);
+<       snprintf(neg,sizeof(buffer),"neg%s",name);
+---
+>       sprintf(pos,"pos%s", name);
+>       sprintf(neg,"neg%s", name);
+253,254c253,254
+<       snprintf(pos,sizeof(buffer),"pos%s",name);
+<       snprintf(neg,sizeof(buffer),"neg%s",name);
+---
+>       sprintf(pos,"pos%s", name);
+>       sprintf(neg,"neg%s", name);
+269,270c269,270
+<       snprintf(pos,sizeof(buffer),"pos%s",name);
+<       snprintf(neg,sizeof(buffer),"neg%s",name);
+---
+>       sprintf(pos,"pos%s", name);
+>       sprintf(neg,"neg%s", name);
+276,277c276,277
+<       snprintf(pos,sizeof(buffer),"pos%s",name);
+<       snprintf(neg,sizeof(buffer),"neg%s",name);
+---
+>       sprintf(pos,"pos%s", name);
+>       sprintf(neg,"neg%s", name);
+283,284c283,284
+<       snprintf(pos,sizeof(buffer),"pos%s",name);
+<       snprintf(neg,sizeof(buffer),"neg%s",name);
+---
+>       sprintf(pos,"pos%s", name);
+>       sprintf(neg,"neg%s", name);
+290,291c290,291
+<       snprintf(pos,sizeof(buffer),"pos%s",name);
+<       snprintf(neg,sizeof(buffer),"neg%s",name);
+---
+>       sprintf(pos,"pos%s", name);
+>       sprintf(neg,"neg%s", name);
+297,298c297,298
+<       snprintf(pos,sizeof(buffer),"pos%s",name);
+<       snprintf(neg,sizeof(buffer),"neg%s",name);
+---
+>       sprintf(pos,"pos%s", name);
+>       sprintf(neg,"neg%s", name);
+304,305c304,305
+<       snprintf(pos,sizeof(buffer),"pos%s",name);
+<       snprintf(neg,sizeof(buffer),"neg%s",name);
+---
+>       sprintf(pos,"pos%s", name);
+>       sprintf(neg,"neg%s", name);
+diff -r /afs/cern.ch/work/g/grnewton/public/CMSSW_10_5_0/src/Alignment/CommonAlignmentMonitor/plugins/AlignmentMonitorSurvey.cc /cvmfs/cms.cern.ch/slc7_amd64_gcc820/cms/cmssw/CMSSW_10_5_0/src/Alignment/CommonAlignmentMonitor/plugins/AlignmentMonitorSurvey.cc
+3a4
+> 
+diff -r /afs/cern.ch/work/g/grnewton/public/CMSSW_10_5_0/src/Alignment/CommonAlignmentMonitor/plugins/AlignmentStats.cc /cvmfs/cms.cern.ch/slc7_amd64_gcc820/cms/cmssw/CMSSW_10_5_0/src/Alignment/CommonAlignmentMonitor/plugins/AlignmentStats.cc
+5d4
+< #include "DataFormats/TrackerCommon/interface/TrackerTopology.h"
+35,36c34
+<   prescale_(iConfig.getParameter<uint32_t>("TrkStatsPrescale")),
+<   lastSetup_(nullptr)
+---
+>   prescale_(iConfig.getParameter<uint32_t>("TrkStatsPrescale"))
+78d75
+<   firstEvent_=true;
+88,89d84
+<   lastSetup_ = &iSetup;
+< 
+92,97c87,89
+<   if(firstEvent_){
+<     edm::ESHandle<TrackerGeometry> tmpTkGeometry;
+<     iSetup.get<TrackerDigiGeometryRecord>().get(tmpTkGeometry);
+<     trackerGeometry_=&(*tmpTkGeometry);
+<     firstEvent_=false;
+<   }
+---
+>   edm::ESHandle<TrackerGeometry> tmpTkGeometry;
+>   iSetup.get<TrackerDigiGeometryRecord>().get(tmpTkGeometry);
+>   trackerGeometry_=&(*tmpTkGeometry);
+98a91,93
+>   edm::ESHandle<TrackerTopology> tTopoHandle;
+>   iSetup.get<TrackerTopologyRcd>().get(tTopoHandle);
+>   trackerTopology_ = tTopoHandle.product();
+148,150c143,144
+<     for (trackingRecHit_iterator ith = ittrk->recHitsBegin(), edh = ittrk->recHitsEnd(); ith != edh; ++ith) {
+< 
+<       const TrackingRecHit *hit = *ith; // ith is an iterator on edm::Ref to rechit
+---
+>     for (auto const& hit : ittrk->recHits())
+>     {
+311,316c305
+<   //Retrieve tracker topology from geometry
+<   edm::ESHandle<TrackerTopology> tTopoHandle;
+<   lastSetup_->get<TrackerTopologyRcd>().get(tTopoHandle);
+<   const TrackerTopology* const tTopo = tTopoHandle.product();
+< 
+<   AlignableTracker* theAliTracker=new AlignableTracker(&(*trackerGeometry_), tTopo);
+---
+>   std::unique_ptr<AlignableTracker> theAliTracker=std::make_unique<AlignableTracker>(&(*trackerGeometry_), trackerTopology_);
+376c365
+<      layer=tTopo->pxbLayer(id);
+---
+>      layer=trackerTopology_->pxbLayer(id);
+382c371
+<      layer=tTopo->pxfDisk(id);
+---
+>      layer=trackerTopology_->pxfDisk(id);
+388,390c377,379
+<      layer=tTopo->tibLayer(id);
+<      is2D=tTopo->tibIsDoubleSide(id);
+<      isStereo=tTopo->tibIsStereo(id);
+---
+>      layer=trackerTopology_->tibLayer(id);
+>      is2D=trackerTopology_->tibIsDoubleSide(id);
+>      isStereo=trackerTopology_->tibIsStereo(id);
+394,396c383,385
+<      layer=tTopo->tidWheel(id);
+<      is2D=tTopo->tidIsDoubleSide(id);
+<      isStereo=tTopo->tidIsStereo(id);
+---
+>      layer=trackerTopology_->tidWheel(id);
+>      is2D=trackerTopology_->tidIsDoubleSide(id);
+>      isStereo=trackerTopology_->tidIsStereo(id);
+400,402c389,391
+<      layer=tTopo->tobLayer(id);
+<      is2D=tTopo->tobIsDoubleSide(id);
+<      isStereo=tTopo->tobIsStereo(id);
+---
+>      layer=trackerTopology_->tobLayer(id);
+>      is2D=trackerTopology_->tobIsDoubleSide(id);
+>      isStereo=trackerTopology_->tobIsStereo(id);
+406,408c395,397
+<      layer=tTopo->tecWheel(id);
+<      is2D=tTopo->tecIsDoubleSide(id);
+<      isStereo=tTopo->tecIsStereo(id);
+---
+>      layer=trackerTopology_->tecWheel(id);
+>      is2D=trackerTopology_->tecIsDoubleSide(id);
+>      isStereo=trackerTopology_->tecIsStereo(id);
+diff -r /afs/cern.ch/work/g/grnewton/public/CMSSW_10_5_0/src/Alignment/CommonAlignmentMonitor/plugins/AlignmentStats.h /cvmfs/cms.cern.ch/slc7_amd64_gcc820/cms/cmssw/CMSSW_10_5_0/src/Alignment/CommonAlignmentMonitor/plugins/AlignmentStats.h
+13a14
+> #include "DataFormats/TrackerCommon/interface/TrackerTopology.h"
+49d49
+<   bool firstEvent_;
+67,68c67
+< 
+<   const edm::EventSetup *lastSetup_;
+---
+>   const TrackerTopology* trackerTopology_;
+diff -r /afs/cern.ch/work/g/grnewton/public/CMSSW_10_5_0/src/Alignment/CommonAlignmentMonitor/plugins/TrackerToMuonPropagator.cc /cvmfs/cms.cern.ch/slc7_amd64_gcc820/cms/cmssw/CMSSW_10_5_0/src/Alignment/CommonAlignmentMonitor/plugins/TrackerToMuonPropagator.cc
+212,213c212,213
+<       for (trackingRecHit_iterator hit = globalMuon->combinedMuon()->recHitsBegin();  hit != globalMuon->combinedMuon()->recHitsEnd();  ++hit) {
+< 	 DetId id = (*hit)->geographicalId();
+---
+>       for(auto const& hit : globalMuon->combinedMuon()->recHits()) {
+> 	 DetId id = hit->geographicalId();
+227c227
+< 	    muonHits.push_back((*hit)->clone());
+---
+> 	    muonHits.push_back(hit->clone());
+Binary files /afs/cern.ch/work/g/grnewton/public/CMSSW_10_5_0/src/Alignment/CommonAlignmentMonitor/python/AlignmentMonitorMuonResidualsDefaults_cff.pyc and /cvmfs/cms.cern.ch/slc7_amd64_gcc820/cms/cmssw/CMSSW_10_5_0/src/Alignment/CommonAlignmentMonitor/python/AlignmentMonitorMuonResidualsDefaults_cff.pyc differ
+Binary files /afs/cern.ch/work/g/grnewton/public/CMSSW_10_5_0/src/Alignment/CommonAlignmentMonitor/python/AlignmentMonitorMuonSystemMap1D_cfi.pyc and /cvmfs/cms.cern.ch/slc7_amd64_gcc820/cms/cmssw/CMSSW_10_5_0/src/Alignment/CommonAlignmentMonitor/python/AlignmentMonitorMuonSystemMap1D_cfi.pyc differ
+Binary files /afs/cern.ch/work/g/grnewton/public/CMSSW_10_5_0/src/Alignment/CommonAlignmentMonitor/python/AlignmentMonitorMuonVsCurvature_cfi.pyc and /cvmfs/cms.cern.ch/slc7_amd64_gcc820/cms/cmssw/CMSSW_10_5_0/src/Alignment/CommonAlignmentMonitor/python/AlignmentMonitorMuonVsCurvature_cfi.pyc differ
+Binary files /afs/cern.ch/work/g/grnewton/public/CMSSW_10_5_0/src/Alignment/CommonAlignmentMonitor/python/AlignmentMonitorSegmentDifferences_cfi.pyc and /cvmfs/cms.cern.ch/slc7_amd64_gcc820/cms/cmssw/CMSSW_10_5_0/src/Alignment/CommonAlignmentMonitor/python/AlignmentMonitorSegmentDifferences_cfi.pyc differ
+Binary files /afs/cern.ch/work/g/grnewton/public/CMSSW_10_5_0/src/Alignment/CommonAlignmentMonitor/python/AlignmentStats_cff.pyc and /cvmfs/cms.cern.ch/slc7_amd64_gcc820/cms/cmssw/CMSSW_10_5_0/src/Alignment/CommonAlignmentMonitor/python/AlignmentStats_cff.pyc differ
+diff -r /afs/cern.ch/work/g/grnewton/public/CMSSW_10_5_0/src/Alignment/CommonAlignmentMonitor/python/__init__.py /cvmfs/cms.cern.ch/slc7_amd64_gcc820/cms/cmssw/CMSSW_10_5_0/src/Alignment/CommonAlignmentMonitor/python/__init__.py
+3c3
+< __path__.append(os.path.dirname(os.path.abspath(__file__).rsplit('/Alignment/CommonAlignmentMonitor/',1)[0])+'/cfipython/slc7_amd64_gcc700/Alignment/CommonAlignmentMonitor')
+---
+> __path__.append(os.path.dirname(os.path.abspath(__file__).rsplit('/Alignment/CommonAlignmentMonitor/',1)[0])+'/cfipython/slc7_amd64_gcc820/Alignment/CommonAlignmentMonitor')
+Binary files /afs/cern.ch/work/g/grnewton/public/CMSSW_10_5_0/src/Alignment/CommonAlignmentMonitor/python/__init__.pyc and /cvmfs/cms.cern.ch/slc7_amd64_gcc820/cms/cmssw/CMSSW_10_5_0/src/Alignment/CommonAlignmentMonitor/python/__init__.pyc differ
